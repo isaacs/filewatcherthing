@@ -27,3 +27,8 @@ test('basic', function (t) {
   }, 200)
 })
 
+test('cleanup', function(t) {
+  fs.unlinkSync(__dirname + '/foo')
+  t.pass('clean')
+  t.end()
+})
