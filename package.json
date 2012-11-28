@@ -1,0 +1,21 @@
+{
+  "name": "filewatcherthing",
+  "version": "0.0.0",
+  "description": "a thing to watch a file and then run a command",
+  "bin": "filewatcherthing.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/isaacs/filewatcherthing"
+  },
+  "keywords": [
+    "file",
+    "watcher",
+    "thing"
+  ],
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
