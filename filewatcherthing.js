@@ -29,8 +29,24 @@ function run() {
   })
 }
 
-fs.watch(watchee, function(event, file) {
+function watch(watchee) {
+  fs.watch(watchee, onwatch)
+  // on osx, dir watching only catches rename events
+  fs.readdir(watchee, function(er, children) {
+    if (er) return;
+    children.filter(function (c) {
+      return c !== '.' && c !== '..'
+    }).forEach(function (c) {
+      watch(path.resolve(watchee, c))
+    })
+  })
+}
+
+function onwatch(event, file) {
   if (running) return
   console.error(event, file)
   run()
-})
+}
+
+watch(watchee)
+
