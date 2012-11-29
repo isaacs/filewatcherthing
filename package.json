@@ -2,7 +2,10 @@
   "name": "filewatcherthing",
   "version": "1.0.0",
   "description": "a thing to watch a file and then run a command",
-  "bin": "filewatcherthing.js",
+  "bin": {
+    "filewatcherthing": "filewatcherthing.js",
+    "fwt": "filewatcherthing.js"
+  },
   "scripts": {
     "test": "tap test/*.js"
   },
