@@ -6,3 +6,6 @@ One day in #Node.js...
 
 You can also use `fwt` instead of `filewatcherthing`, since that's too
 many characters to type.
+
+You can pass globs in, and you can separate files from the cmd with
+`--`
