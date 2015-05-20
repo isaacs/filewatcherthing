@@ -1,6 +1,6 @@
 {
   "name": "filewatcherthing",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "a thing to watch a file and then run a command",
   "bin": {
     "filewatcherthing": "filewatcherthing.js",
