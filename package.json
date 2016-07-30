@@ -21,9 +21,9 @@
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
   "license": "ISC",
   "devDependencies": {
-    "tap": "^1.2.0"
+    "tap": "^6.2.0"
   },
   "dependencies": {
-    "glob": "^4.3.5"
+    "glob": "^7.0.5"
   }
 }
